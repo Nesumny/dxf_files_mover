@@ -8,9 +8,13 @@
 import os
 import time
 import subprocess
+from scan_folder_script import delete_oldest_files
 
 SRC_DIR = "C:/Users/Sublimacja_2/Downloads"
 DEST_DIR = "C:/Users/Sublimacja_2/Desktop/frez"
+
+folder_path = 'C:/Users/Sublimacja_2/Desktop/frez'
+max_files = 20
 
 no_files_message_printed = False # Flag to track if the message has been printed
 
@@ -38,4 +42,7 @@ while True:
         print("No files to move. Standing by...")
         no_files_message_printed = True
     
-    time.sleep(5)  # Check every 60 seconds (adjust as needed)
+    
+    delete_oldest_files(folder_path, max_files)
+    
+    time.sleep(1)  # Check every 60 seconds (adjust as needed)
