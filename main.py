@@ -14,7 +14,7 @@ SRC_DIR = "C:/Users/Sublimacja_2/Downloads"
 DEST_DIR = "C:/Users/Sublimacja_2/Desktop/frez"
 
 folder_path = 'C:/Users/Sublimacja_2/Desktop/frez'
-max_files = 20
+max_files = 40
 
 no_files_message_printed = False # Flag to track if the message has been printed
 
